@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Temporary fix because tailwind is acting up for the typewriter */
+
+.Typewriter__wrapper {
+    font-size: x-large;
+}
+
+.Typewriter__cursor {
+    font-size: xx-large;
+}

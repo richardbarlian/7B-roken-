@@ -1,5 +1,14 @@
 import * as React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import useSound from "use-sound";
+import Typewriter from "typewriter-effect";
+
+// Components
+
+import Footer from "./components/Footer.js";
+
+// Images
+
 import DyingInsideImage from "./images/ballpit-dying_inside.jpg";
 import GokartSeflie from "./images/gokartselfie-kimmy_chloe.jpg";
 import BallpitIdk from "./images/ballpit-idk.jpg";
@@ -10,17 +19,21 @@ import BallpitRichard from "./images/ballpit-richard.jpg";
 import Ballpit2Chloe from "./images/ballpit2-chloe_kimmy.jpg";
 import SelfieChloeKimberly from "./images/selfie-chloe_kimberly.jpg";
 import GoKart from "./images/gokart.png";
-import url from "./sound/from_the_start.mp3";
-import useSound from "use-sound";
+import WaterTemple1 from "./images/watertemple_chloe_audrey_abigail_kyla_elena.jpg";
+import WaterTemple2 from "./images/watertemple2_chloe_audrey_abigail_kyla_elena.jpg";
+import BallpitEveryone from "./images/ballpit-everyone.jpg";
+
+// Sound
+
+import music from "./sound/from_the_start.mp3";
 
 export default function App() {
-    const alignCenter = { display: "flex", alignItems: "center" };
     const [unClicked, Click] = React.useState(true);
-    const [play] = useSound(url, { volume: 0.1 });
+    const [play] = useSound(music, { volume: 0.1 });
 
     return (
         <div>
-            <Parallax pages={13}>
+            <Parallax pages={13.5}>
                 <ParallaxLayer
                     offset={0}
                     speed={0.5}
@@ -53,12 +66,12 @@ export default function App() {
                 >
                     <img
                         src={DyingInsideImage}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] rounded-3xl"
                         alt="dying inside"
                     />
                     {unClicked && (
                         <button
-                            className="text-[2vw] hover:text-[2.5vw] text-white ml-[2vw] z-99 absolute text-center animate-bounce"
+                            className="text-[2vw] hover:text-[2.5vw] text-white ml-[2vw] z-99 absolute text-center hover:animate-bounce "
                             id="btn"
                             onClick={() => {
                                 play();
@@ -71,7 +84,7 @@ export default function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    sticky={{ start: 1, end: 2 }}
+                    sticky={{ start: 1, end: 1.5 }}
                     // style={{ ...alignCenter, justifyContent: "flex-start" }}
                     className="flex items-center justify-start"
                 >
@@ -88,32 +101,30 @@ export default function App() {
 
                 <ParallaxLayer
                     offset={1}
-                    sticky={{ start: 1, end: 1 }}
-                    speed={4}
+                    speed={1}
                     className="flex items-center justify-end pr-[10vw]"
                 >
                     <img
                         src={GokartSeflie}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] animate-bounce rounded-3xl"
                         alt="dying inside"
                     />
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={1}
-                    sticky={{ start: 2, end: 2 }}
-                    speed={4}
-                    className="flex items-center justify-end pr-[10vw]"
+                    offset={1.75}
+                    speed={1}
+                    className="flex items-center justify-end pr-[10vw] "
                 >
                     <img
                         src={BallpitIdk}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] animate-bounce rounded-3xl"
                         alt="dying inside"
                     />
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    sticky={{ start: 3, end: 5 }}
+                    sticky={{ start: 2, end: 3 }}
                     // style={{ ...alignCenter, justifyContent: "flex-start" }}
                     className="flex items-center justify-start"
                 >
@@ -129,35 +140,32 @@ export default function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={1}
-                    sticky={{ start: 4, end: 4 }}
-                    speed={4}
-                    className="flex items-center justify-end pr-[10vw]"
+                    offset={2.5}
+                    speed={1}
+                    className="flex items-center justify-end pr-[10vw] "
                 >
                     <img
                         src={BallpitIdk2}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] animate-bounce rounded-3xl"
                         alt="dying inside"
                     />
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={1}
-                    sticky={{ start: 5, end: 5 }}
-                    speed={4}
-                    className="flex items-center justify-end pr-[10vw]"
+                    offset={3}
+                    speed={1}
+                    className="flex items-center justify-end pr-[10vw] "
                 >
                     <img
                         src={BallpitKylaChloe}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] animate-bounce rounded-3xl"
                         alt="dying inside"
                     />
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={1}
-                    sticky={{ start: 6, end: 6 }}
-                    speed={4}
+                    offset={4}
+                    speed={1}
                     className="flex items-center justify-end pr-[10vw]"
                 >
                     <div className=" text-[2vw]">
@@ -170,22 +178,21 @@ export default function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    sticky={{ start: 6, end: 6 }}
+                    offset={4}
                     // style={{ ...alignCenter, justifyContent: "flex-start" }}
                     speed={1}
-                    className="flex items-center justify-start ml-[5vw]"
+                    className="flex items-center justify-start ml-[5vw] "
                 >
                     <img
                         src={BallpitKivlan}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] animate-bounce rounded-3xl"
                         alt="dying inside"
                     />
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={1}
-                    sticky={{ start: 7, end: 7 }}
-                    speed={4}
+                    offset={5}
+                    speed={1}
                     className="flex items-center justify-end pr-[10vw]"
                 >
                     <div className="text-[2vw]">
@@ -198,22 +205,20 @@ export default function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    sticky={{ start: 7, end: 7 }}
+                    offset={5}
                     // style={{ ...alignCenter, justifyContent: "flex-start" }}
                     speed={1}
-                    className="flex animate-pulse items-center justify-start ml-[5vw]"
+                    className="flex animate-pulse items-center justify-start ml-[5vw] "
                 >
                     <img
                         src={BallpitRichard}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] animate-bounce rounded-3xl"
                         alt="dying inside"
                     />
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={1}
-                    sticky={{ start: 8, end: 9 }}
-                    speed={4}
+                    sticky={{ start: 6, end: 7 }}
                     className="flex items-center justify-end pr-[10vw]"
                 >
                     <p className="text-[2vw]">
@@ -225,42 +230,140 @@ export default function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    sticky={{ start: 8, end: 8 }}
+                    offset={6}
                     // style={{ ...alignCenter, justifyContent: "flex-start" }}
                     speed={1}
-                    className="flex animate-pulse items-center justify-start ml-[5vw]"
+                    className="flex animate-pulse items-center justify-start ml-[5vw] "
                 >
                     <img
                         src={Ballpit2Chloe}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] animate-bounce rounded-3xl"
                         alt="dying inside"
                     />
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    sticky={{ start: 9, end: 9 }}
-                    // style={{ ...alignCenter, justifyContent: "flex-start" }}
+                    offset={7}
                     speed={1}
-                    className="flex items-center justify-start ml-[5vw]"
+                    className="flex items-center justify-start ml-[5vw] "
                 >
                     <img
                         src={SelfieChloeKimberly}
-                        className="w-[30%] animate-bounce"
+                        className="w-[30%] animate-bounce rounded-3xl"
                         alt="dying inside"
                     />
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={10}
+                    offset={8}
                     speed={1}
                     className="flex items-center justify-center"
                 >
                     <p className="text-[2vw]">
                         Gokart was also fun as hell! (Elena has skill isu tbh)
                     </p>
-                    <img className="w-[40vw] " src={GoKart} alt="Car go zoom zoom" />
+                    <img
+                        className="w-[40vw] "
+                        src={GoKart}
+                        alt="Car go zoom zoom"
+                    />
+                </ParallaxLayer>
+
+                <ParallaxLayer
+                    sticky={{ start: 9, end: 10 }}
+                    speed={1}
+                    className="flex items-center justify-end pr-[10vw]"
+                >
+                    <div className=" text-[2vw]">
+                        <p>
+                            Forbidden Temple 🏞🌊 thing was also pretty fun...
+                            <br />
+                            but some people got splashed (cough cough Chloe)
+                        </p>
+                    </div>
+                </ParallaxLayer>
+
+                <ParallaxLayer
+                    offset={9}
+                    // style={{ ...alignCenter, justifyContent: "flex-start" }}
+                    speed={1}
+                    className="flex items-center justify-start ml-[5vw] "
+                >
+                    <img
+                        src={WaterTemple1}
+                        className="w-[30%] animate-bounce rounded-3xl"
+                        alt="dying inside"
+                    />
+                </ParallaxLayer>
+
+                <ParallaxLayer
+                    offset={10}
+                    // style={{ ...alignCenter, justifyContent: "flex-start" }}
+                    speed={1}
+                    className="flex items-center justify-start ml-[5vw] "
+                >
+                    <img
+                        src={WaterTemple2}
+                        className="w-[30%] animate-bounce rounded-3xl"
+                        alt="dying inside"
+                    />
+                </ParallaxLayer>
+
+                <ParallaxLayer
+                    offset={11}
+                    speed={1}
+                    className="flex items-center justify-center"
+                >
+                    <p className="text-[4vw]">
+                        So, as the school year comes to a close...
+                    </p>
+                </ParallaxLayer>
+                <ParallaxLayer
+                    offset={11.5}
+                    speed={1}
+                    className="flex items-center justify-center"
+                >
+                    <p className="text-[4vw]">
+                        And we all are gonna move on with our lives
+                    </p>
+                </ParallaxLayer>
+                <ParallaxLayer
+                    offset={11.9}
+                    speed={1}
+                    className="flex items-center justify-center"
+                >
+                    <p className="text-[4vw]">All I want to say is...</p>
+                </ParallaxLayer>
+                <ParallaxLayer
+                    offset={12.5}
+                    speed={1}
+                    className="flex items-center justify-center flex-col"
+                >
+                    <img
+                        src={BallpitEveryone}
+                        className="bg-cover bg-center rounded-full max-w-xxl mb-5"
+                        alt="idk man"
+                    />
+                    {/* <p className="text-[4vw]">Thanks for the memories</p> */}
+                    {}
+                    <Typewriter
+                        className="text-9xl"
+                        options={{
+                            strings: [
+                                "Thanks for the memories!",
+                                "I'll always remember yall.",
+                                "Sincerely, Richard",
+                            ],
+                            autoStart: true,
+                            loop: true,
+                            cursor: "|",
+                            skipAddStyles: true,
+                        }}
+                    />
                 </ParallaxLayer>
             </Parallax>
+
+            <Footer />
         </div>
     );
 }
