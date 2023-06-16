@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 // Components
 
-import Footer from "./components/Footer.js";
+import Footer from "./components/Footer";
 
 // Images
 
@@ -33,22 +33,20 @@ export default function App() {
 
     return (
         <div>
-            <Parallax pages={13.5}>
+            <Parallax pages={13.5} className="bg-peachpastel">
                 <ParallaxLayer
                     offset={0}
                     speed={0.5}
-                    // style={{ ...alignCenter, justifyContent: "center" }}
                     className="flex items-center justify-center flex-col"
                 >
-                    <p className="text-[5vw]">7B(roken)</p>
+                    <p className="text-[5vw] text-brownishpastel">7B(roken)</p>
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={0}
                     speed={1}
-                    // style={{ ...alignCenter, justifyContent: "center" }}
                     className="flex items-center justify-end pr-[6vw]"
                 >
-                    <p className="text-[1.6vw]">
+                    <p className="text-[1.6vw] text-brownishpastel">
                         It's been a hell of a year huh... <br />
                         Sometimes it feels like an eternity in class
                         <br /> but sometimes it just zooms past you
@@ -61,7 +59,6 @@ export default function App() {
                 <ParallaxLayer
                     offset={0}
                     speed={1}
-                    // style={{ ...alignCenter, justifyContent: "center" }}
                     className="flex items-center pl-[10%] relative"
                 >
                     <img
@@ -71,7 +68,7 @@ export default function App() {
                     />
                     {unClicked && (
                         <button
-                            className="text-[2vw] hover:text-[2.5vw] text-white ml-[2vw] z-99 absolute text-center hover:animate-bounce "
+                            className="text-[2vw] hover:text-[2.3vw] text-greypastel font-bold ml-[2vw] z-99 absolute text-center hover:animate-bounce bg-brownpastel rounded-xl p-[1.5vw]"
                             id="btn"
                             onClick={() => {
                                 play();
@@ -85,8 +82,7 @@ export default function App() {
 
                 <ParallaxLayer
                     sticky={{ start: 1, end: 1.5 }}
-                    // style={{ ...alignCenter, justifyContent: "flex-start" }}
-                    className="flex items-center justify-start"
+                    className="flex items-center justify-start text-brownishpastel"
                 >
                     <div className="m-20 text-[2vw]">
                         <p>
@@ -125,8 +121,7 @@ export default function App() {
 
                 <ParallaxLayer
                     sticky={{ start: 2, end: 3 }}
-                    // style={{ ...alignCenter, justifyContent: "flex-start" }}
-                    className="flex items-center justify-start"
+                    className="flex items-center justify-start text-brownishpastel"
                 >
                     <div className="m-20 text-[2vw]">
                         <p>
@@ -166,7 +161,7 @@ export default function App() {
                 <ParallaxLayer
                     offset={4}
                     speed={1}
-                    className="flex items-center justify-end pr-[10vw]"
+                    className="flex items-center justify-end pr-[10vw] text-brownishpastel"
                 >
                     <div className=" text-[2vw]">
                         <p>
@@ -179,7 +174,6 @@ export default function App() {
 
                 <ParallaxLayer
                     offset={4}
-                    // style={{ ...alignCenter, justifyContent: "flex-start" }}
                     speed={1}
                     className="flex items-center justify-start ml-[5vw] "
                 >
@@ -193,7 +187,7 @@ export default function App() {
                 <ParallaxLayer
                     offset={5}
                     speed={1}
-                    className="flex items-center justify-end pr-[10vw]"
+                    className="flex items-center justify-end pr-[10vw] text-brownishpastel"
                 >
                     <div className="text-[2vw]">
                         <p>
@@ -219,7 +213,7 @@ export default function App() {
 
                 <ParallaxLayer
                     sticky={{ start: 6, end: 7 }}
-                    className="flex items-center justify-end pr-[10vw]"
+                    className="flex items-center justify-end pr-[10vw] text-brownishpastel"
                 >
                     <p className="text-[2vw]">
                         As you may have noticed <br />
@@ -259,7 +253,7 @@ export default function App() {
                     speed={1}
                     className="flex items-center justify-center"
                 >
-                    <p className="text-[2vw]">
+                    <p className="text-[2vw] text-brownishpastel">
                         Gokart was also fun as hell! (Elena has skill isu tbh)
                     </p>
                     <img
@@ -272,11 +266,11 @@ export default function App() {
                 <ParallaxLayer
                     sticky={{ start: 9, end: 10 }}
                     speed={1}
-                    className="flex items-center justify-end pr-[10vw]"
+                    className="flex items-center justify-end pr-[10vw] text-brownishpastel"
                 >
                     <div className=" text-[2vw]">
                         <p>
-                            Forbidden Temple 🏞🌊 thing was also pretty fun...
+                            The forbidden temple 🏞🌊 thing was also pretty fun...
                             <br />
                             but some people got splashed (cough cough Chloe)
                         </p>
@@ -285,7 +279,6 @@ export default function App() {
 
                 <ParallaxLayer
                     offset={9}
-                    // style={{ ...alignCenter, justifyContent: "flex-start" }}
                     speed={1}
                     className="flex items-center justify-start ml-[5vw] "
                 >
@@ -298,7 +291,6 @@ export default function App() {
 
                 <ParallaxLayer
                     offset={10}
-                    // style={{ ...alignCenter, justifyContent: "flex-start" }}
                     speed={1}
                     className="flex items-center justify-start ml-[5vw] "
                 >
@@ -344,10 +336,8 @@ export default function App() {
                         className="bg-cover bg-center rounded-full max-w-xxl mb-5"
                         alt="idk man"
                     />
-                    {/* <p className="text-[4vw]">Thanks for the memories</p> */}
-                    {}
+
                     <Typewriter
-                        className="text-9xl"
                         options={{
                             strings: [
                                 "Thanks for the memories!",

@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Temporary fix because tailwind is acting up for the typewriter */
 
 .Typewriter__wrapper {
-    font-size: x-large;
+    font-size: 4vw;
 }
 
 .Typewriter__cursor {
-    font-size: xx-large;
+    font-size: 4.5vw;
 }
