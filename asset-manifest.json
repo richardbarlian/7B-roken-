@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/7B-roken-/static/css/main.aaabef4b.css",
-    "main.js": "/7B-roken-/static/js/main.3150ac59.js",
+    "main.css": "/7B-roken-/static/css/main.c4ea10d6.css",
+    "main.js": "/7B-roken-/static/js/main.8f13f4dc.js",
     "static/js/845.36117c10.chunk.js": "/7B-roken-/static/js/845.36117c10.chunk.js",
     "static/media/from_the_start.mp3": "/7B-roken-/static/media/from_the_start.28510436403a16ee9243.mp3",
     "static/media/ballpit-kyla_chloe.jpg": "/7B-roken-/static/media/ballpit-kyla_chloe.90ef4935a264a1583f48.jpg",
@@ -18,12 +18,12 @@
     "static/media/ballpit-idk2.jpg": "/7B-roken-/static/media/ballpit-idk2.1d401b367042ed498ad6.jpg",
     "static/media/gokart.png": "/7B-roken-/static/media/gokart.6801b8dca271b2fdba35.png",
     "index.html": "/7B-roken-/index.html",
-    "main.aaabef4b.css.map": "/7B-roken-/static/css/main.aaabef4b.css.map",
-    "main.3150ac59.js.map": "/7B-roken-/static/js/main.3150ac59.js.map",
+    "main.c4ea10d6.css.map": "/7B-roken-/static/css/main.c4ea10d6.css.map",
+    "main.8f13f4dc.js.map": "/7B-roken-/static/js/main.8f13f4dc.js.map",
     "845.36117c10.chunk.js.map": "/7B-roken-/static/js/845.36117c10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaabef4b.css",
-    "static/js/main.3150ac59.js"
+    "static/css/main.c4ea10d6.css",
+    "static/js/main.8f13f4dc.js"
   ]
 }
