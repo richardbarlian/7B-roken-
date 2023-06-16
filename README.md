@@ -10,4 +10,4 @@
 
 ## - Keenan
 
-### ""Whoever is reading, note that this class finna collapse or forgotten next year"
+### "Whoever is reading, note that this class finna collapse or forgotten next year"
